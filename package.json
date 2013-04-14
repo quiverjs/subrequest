@@ -1,0 +1,38 @@
+{
+  "author": {
+    "name": "Soares Chen",
+    "email": "soares.chen@gmail.com",
+    "url": "http://soareschen.com"
+  },
+  "name": "quiver-subrequest",
+  "desription": "Quickly issue a client HTTP request to other HTTP servers",
+  "version": "0.0.1",
+  "homepage": "https://github.com/quiverjs/subrequest",
+  "repository": {
+    "url": "git@github.com:quiverjs/subrequest.git"
+  },
+  "dependencies": {
+    "quiver-error": ">=0.0.2",
+    "quiver-safe-callback": ">=0.0.3",
+    "quiver-stream-channel": ">=0.0.7",
+    "quiver-node-stream": ">=0.0.1",
+    "quiver-pipe-stream": ">=0.0.1"
+  },
+  "devDependencies": {
+    "quiver-stream-convert": ">=0.0.4",
+    "mocha": ">=1.8.1",
+    "should": ">=1.2.2"
+  },
+  "bugs": {
+    "url": "https://github.com/quiverjs/subrequest/issues",
+    "email": "quiverjs@soareschen.com"
+  },
+  "licenses": {
+    "type": "MIT",
+    "url": "https://raw.github.com/quiverjs/license/master/LICENSE"
+  },
+  "main": "./lib/subrequest",
+  "scripts": {
+    "test": "make test"
+  }
+}
