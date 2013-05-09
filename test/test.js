@@ -3,6 +3,7 @@ var http = require('http')
 var should = require('should')
 var subrequest = require('../lib/subrequest')
 var nodeStream = require('quiver-node-stream')
+var streamChannel = require('quiver-stream-channel')
 var streamConvert = require('quiver-stream-convert')
 
 var testPort = 8005
@@ -76,5 +77,27 @@ describe('test subrequest', function() {
         callback()
       })
     })
+  })
+
+  it('test http handler', function(callback) {
+    var requestHead = {
+      host: 'localhost',
+      port: testPort,
+      method: 'POST',
+      path: '/post-path'
+    }
+
+    var requestBody = streamConvert.textToStreamable('post content')
+    subrequest.trivialHttpSubrequestHandler(requestHead, requestBody, 
+      function(err, responseHead, responseStreamable) {
+        should.not.exist(err)
+
+        streamConvert.streamableToText(responseStreamable, function(err, responseText) {
+          should.not.exist(err)
+
+          responseText.should.equal('post response')
+          callback()
+        })
+      })
   })
 })
