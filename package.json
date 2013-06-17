@@ -6,7 +6,7 @@
   },
   "name": "quiver-subrequest",
   "desription": "Quickly issue a client HTTP request to other HTTP servers",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/quiverjs/subrequest",
   "repository": {
     "url": "git@github.com:quiverjs/subrequest.git"
