@@ -6,22 +6,22 @@
   },
   "name": "quiver-subrequest",
   "desription": "Quickly issue a client HTTP request to other HTTP servers",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/quiverjs/subrequest",
   "repository": {
     "url": "git@github.com:quiverjs/subrequest.git"
   },
   "dependencies": {
-    "quiver-error": ">=0.0.2",
-    "quiver-safe-callback": ">=0.0.3",
-    "quiver-stream-channel": ">=0.0.7",
-    "quiver-stream-convert": ">=0.0.6",
-    "quiver-node-stream": ">=0.0.1",
-    "quiver-pipe-stream": ">=0.0.1"
+    "quiver-error": "~0.1.0",
+    "quiver-node-stream": "~0.0.5",
+    "quiver-pipe-stream": "~0.0.2",
+    "quiver-safe-callback": "~0.1.1",
+    "quiver-stream-convert": "0.0.10",
+    "quiver-stream-channel": "~0.0.12"
   },
   "devDependencies": {
-    "mocha": ">=1.8.1",
-    "should": ">=1.2.2"
+    "mocha": "~1.17.1",
+    "should": "~3.1.2"
   },
   "bugs": {
     "url": "https://github.com/quiverjs/subrequest/issues",
